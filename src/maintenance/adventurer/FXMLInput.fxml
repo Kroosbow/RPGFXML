@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="626.0" stylesheets="@fxmlhero.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maintenance.adventurer.FXMLInputController">
+   <children>
+      <TextField fx:id="txtThn" layoutX="109.0" layoutY="246.0" onAction="#inputThn" prefHeight="35.0" prefWidth="200.0" />
+      <ComboBox fx:id="classcombo" layoutX="25.0" layoutY="139.0" prefHeight="41.0" prefWidth="177.0" promptText="Class" styleClass="combobox" />
+      <TextField fx:id="txtSub" layoutX="109.0" layoutY="356.0" onAction="#inputSub" prefHeight="35.0" prefWidth="200.0" />
+      <ComboBox fx:id="ordercombo" layoutX="220.0" layoutY="138.0" prefHeight="41.0" prefWidth="197.0" promptText="Order" styleClass="combobox" />
+      <ImageView fx:id="pro_pic" fitHeight="165.0" fitWidth="177.0" layoutX="410.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="26.0" layoutY="307.0" text="Name" />
+      <Label layoutX="27.0" layoutY="362.0" text="SubClass" />
+      <Label layoutX="27.0" layoutY="251.0" text="Year" />
+      <Label layoutX="25.0" layoutY="198.0" text="No." />
+      <ComboBox fx:id="racecombo" layoutX="441.0" layoutY="139.0" onAction="#racechange" prefHeight="39.0" prefWidth="150.0" promptText="Race" styleClass="combobox">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></ComboBox>
+      <TextField fx:id="txtNo" layoutX="109.0" layoutY="192.0" onAction="#inputNo" prefHeight="35.0" prefWidth="200.0" />
+      <TextField fx:id="txtName" layoutX="108.0" layoutY="303.0" onAction="#inputName" prefHeight="35.0" prefWidth="200.0" />
+      <TextArea fx:id="desc" layoutX="112.0" layoutY="466.0" prefHeight="141.0" prefWidth="475.0" />
+      <Button fx:id="submit" layoutX="34.0" layoutY="622.0" mnemonicParsing="false" onAction="#submitClick" prefHeight="41.0" prefWidth="111.0" text="Submit 🖫" />
+      <Button fx:id="clear" layoutX="260.0" layoutY="622.0" mnemonicParsing="false" onAction="#clearclick" prefHeight="39.0" prefWidth="103.0" text="Clear 🗑" />
+      <Button fx:id="back" layoutX="482.0" layoutY="622.0" mnemonicParsing="false" onAction="#backclick" prefHeight="39.0" prefWidth="103.0" text="Back" />
+      <Label layoutX="32.0" layoutY="466.0" text="Desc" />
+      <Button fx:id="findprofil" layoutX="417.0" layoutY="411.0" mnemonicParsing="false" onAction="#findprofilclick" prefHeight="41.0" prefWidth="168.0" text="📷" />
+      <TextField fx:id="txtpropic" layoutX="456.0" layoutY="271.0" onAction="#inputpropic" prefHeight="39.0" prefWidth="28.0" visible="false" />
+      <Separator layoutX="25.0" layoutY="116.0" prefHeight="3.0" prefWidth="562.0" />
+      <Label layoutX="284.0" layoutY="49.0" styleClass="title" text="HERO">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtrc" layoutX="441.0" layoutY="192.0" onAction="#inputrc" prefHeight="35.0" prefWidth="150.0" promptText="your race" />
+   </children>
+</AnchorPane>

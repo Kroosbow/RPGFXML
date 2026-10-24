@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="799.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maintenance.bestiaries.FXMLRaceController">
+    <stylesheets>
+        <URL value="@fxmlrace.css" />
+    </stylesheets>
+   <children>
+      <Separator layoutX="390.0" layoutY="14.0" orientation="VERTICAL" prefHeight="477.0" prefWidth="10.0" />
+      <TabPane fx:id="mainTabPane" layoutY="-1.0" prefHeight="503.0" prefWidth="799.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Guide to Races">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="del" layoutY="62.0" mnemonicParsing="false" onAction="#delclick" prefHeight="39.0" prefWidth="76.0" text="Delete" />
+                        <Button fx:id="create" layoutY="14.0" mnemonicParsing="false" onAction="#createclick" prefHeight="39.0" prefWidth="76.0" text="Create" />
+                        <Button fx:id="edit" layoutY="109.0" mnemonicParsing="false" onAction="#editclick" prefHeight="39.0" prefWidth="76.0" text="Edit" />
+                        <Button fx:id="prev" layoutX="2.0" layoutY="412.0" mnemonicParsing="false" onAction="#prevclick" text="prev" />
+                        <Button fx:id="back" layoutX="-7.0" layoutY="349.0" mnemonicParsing="false" onAction="#backclick" prefHeight="39.0" prefWidth="76.0" text="Back" />
+                        <Label layoutX="414.0" layoutY="216.0" text="Race Description :" />
+                        <Label layoutX="24.0" layoutY="222.0" text="Effect :" />
+                        <Label layoutX="27.0" layoutY="173.0" text="Race :" />
+                        <TableView fx:id="tbrc" prefHeight="39.0" prefWidth="142.0" visible="false">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
+                        </TableView>
+                        <TextArea fx:id="txtDesc" editable="false" layoutX="420.0" layoutY="261.0" prefHeight="177.0" prefWidth="348.0" wrapText="true" />
+                        <TextField fx:id="txtId" editable="false" layoutX="142.0" layoutY="14.0" prefHeight="39.0" prefWidth="210.0" />
+                        <Button fx:id="next" layoutX="737.0" layoutY="412.0" mnemonicParsing="false" onAction="#nextclick" text="Next" />
+                        <Label layoutX="99.0" layoutY="20.0" text="Id : " />
+                        <Label fx:id="txteffectdesc" layoutX="152.0" layoutY="279.0" prefHeight="119.0" prefWidth="200.0" textAlignment="JUSTIFY" wrapText="true" />
+                        <Label layoutX="23.0" layoutY="279.0" text="Effect Desc :" />
+                        <ImageView fx:id="img_rc" fitHeight="177.0" fitWidth="200.0" layoutX="494.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="txtEffect" layoutX="99.0" layoutY="221.0" prefHeight="27.0" prefWidth="228.0" text="ef" />
+                        <Label fx:id="txtRace" layoutX="99.0" layoutY="172.0" prefHeight="27.0" prefWidth="228.0" text="rc" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Guide to Classes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="next1" layoutX="737.0" layoutY="405.0" mnemonicParsing="false" onAction="#nextclickcls" text="Next" />
+                        <Button fx:id="back1" layoutY="355.0" mnemonicParsing="false" onAction="#backclick" prefHeight="39.0" prefWidth="76.0" text="Back" />
+                        <Button fx:id="prev1" layoutX="2.0" layoutY="405.0" mnemonicParsing="false" onAction="#prevclickcls" text="prev" />
+                        <Button fx:id="edit1" layoutY="109.0" mnemonicParsing="false" onAction="#editclickcls" prefHeight="39.0" prefWidth="76.0" text="Edit" />
+                        <Button fx:id="create1" layoutY="14.0" mnemonicParsing="false" onAction="#createclickcls" prefHeight="39.0" prefWidth="76.0" text="Create" />
+                        <Button fx:id="del1" layoutY="62.0" mnemonicParsing="false" onAction="#delclickcls" prefHeight="39.0" prefWidth="76.0" text="Delete" />
+                        <TableView fx:id="tbcls" layoutX="685.0" layoutY="25.0" prefHeight="38.0" prefWidth="114.0" visible="false">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                        <ImageView fx:id="imgcls" fitHeight="177.0" fitWidth="200.0" layoutX="501.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="104.0" layoutY="20.0" text="Id :" />
+                        <Label layoutX="37.0" layoutY="191.0" text="Class :" />
+                        <Label layoutX="411.0" layoutY="247.0" text="Description :" />
+                        <Label layoutX="40.0" layoutY="247.0" text="Class Bonus :" />
+                        <TextField fx:id="txtidcls" editable="false" layoutX="143.0" layoutY="14.0" />
+                        <TextField fx:id="txtcls" editable="false" layoutX="143.0" layoutY="185.0" />
+                        <TextArea fx:id="txtclsdesc" editable="false" layoutX="411.0" layoutY="294.0" prefHeight="96.0" prefWidth="369.0" wrapText="true" />
+                        <TextArea fx:id="txtbonus" editable="false" layoutX="43.0" layoutY="290.0" prefHeight="58.0" prefWidth="319.0" wrapText="true" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="World Regions">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="delwld" layoutY="62.0" mnemonicParsing="false" onAction="#delclickwld" prefHeight="39.0" prefWidth="76.0" text="Delete" />
+                        <Button fx:id="createwld" layoutY="14.0" mnemonicParsing="false" onAction="#createclickwld" prefHeight="39.0" prefWidth="76.0" text="Create" />
+                        <Button fx:id="editwld" layoutY="109.0" mnemonicParsing="false" onAction="#editclickwld" prefHeight="39.0" prefWidth="76.0" text="Edit" />
+                        <Button fx:id="prev11" layoutY="405.0" mnemonicParsing="false" onAction="#prevclickwld" text="prev" />
+                        <Button fx:id="back11" layoutY="344.0" mnemonicParsing="false" onAction="#backclick" prefHeight="39.0" prefWidth="76.0" text="Back" />
+                        <Button fx:id="next11" layoutX="737.0" layoutY="405.0" mnemonicParsing="false" onAction="#nextclickwld" text="Next" />
+                        <ImageView fx:id="imgwld" fitHeight="311.0" fitWidth="341.0" layoutX="426.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="99.0" layoutY="20.0" text="Id" />
+                        <Label layoutX="73.0" layoutY="168.0" text="Region" />
+                        <Label layoutX="59.0" layoutY="274.0" text="Distance" />
+                        <TextField fx:id="txtidReg" editable="false" layoutX="148.0" layoutY="14.0" />
+                        <TextField fx:id="txtReg" editable="false" layoutX="148.0" layoutY="162.0" />
+                        <TextField fx:id="txtDist" editable="false" layoutX="148.0" layoutY="269.0" />
+                        <TableView fx:id="tbwld" layoutX="115.0" layoutY="371.0" prefHeight="68.0" prefWidth="225.0" visible="false">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.button {
+    -fx-font-family: "Terminal 16 Unicode";
+    -fx-background-color: linear-gradient(#2c1f14, #4a3421);
+    -fx-border-color: #b8860b;
+    -fx-cursor:hand;
+    -fx-text-fill: #f5e6c8;
+}
+.button:hover{
+    -fx-background-color: rgba(80, 55, 25, 0.9);
+    -fx-text-fill: #ffe082;
+}
+.button:pressed{
+    -fx-cursor: default;
+}
+.inv-btn {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-opacity: 1.0;         
+    -fx-cursor: hand;
+}
+
+.inv-btn:hover {
+    -fx-opacity: 1.4;          
+}
+
+.inv-btn:pressed {
+    -fx-opacity: 0.6;
+    -fx-cursor: default;
+}
+

@@ -1,0 +1,29 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.inv-btn {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-opacity: 1.0;         
+    -fx-cursor: hand;
+}
+
+.inv-btn:hover {
+    -fx-opacity: 1.4;          
+}
+
+.inv-btn:pressed {
+    -fx-opacity: 0.6;
+    -fx-cursor: default;
+}

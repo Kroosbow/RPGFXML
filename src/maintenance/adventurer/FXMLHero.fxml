@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="1250.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maintenance.adventurer.FXMLHeroController">
+    <stylesheets>
+        <URL value="@fxmlhero.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tbhero" layoutX="61.0" layoutY="165.0" onMouseClicked="#showgambar" prefHeight="336.0" prefWidth="742.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchbar" layoutX="61.0" layoutY="94.0" onKeyTyped="#searchbartype" prefHeight="39.0" prefWidth="624.0" />
+      <Button fx:id="searchbtn" layoutX="701.0" layoutY="94.0" mnemonicParsing="false" onAction="#searchclick" prefHeight="39.0" prefWidth="101.0" text="search" />
+      <ImageView fx:id="propic" fitHeight="336.0" fitWidth="339.0" layoutX="858.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="prev" layoutX="61.0" layoutY="525.0" mnemonicParsing="false" onAction="#prevclick" styleClass="inv-btn">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../img/next.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="next" layoutX="742.0" layoutY="525.0" mnemonicParsing="false" onAction="#nextclick" styleClass="inv-btn">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/next.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="first" layoutX="164.0" layoutY="525.0" mnemonicParsing="false" onAction="#cirstclick" styleClass="inv-btn">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../img/last.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="last" layoutX="641.0" layoutY="525.0" mnemonicParsing="false" onAction="#lastclick" styleClass="inv-btn">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/last.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="edit" layoutX="399.0" layoutY="525.0" mnemonicParsing="false" onAction="#editclick" text="edit" />
+      <Button layoutX="482.0" layoutY="525.0" mnemonicParsing="false" onAction="#delclick" text="❌" />
+      <Button layoutX="329.0" layoutY="525.0" mnemonicParsing="false" onAction="#addclick" text="➕" />
+      <Label layoutX="61.0" layoutY="35.0" prefHeight="39.0" prefWidth="474.0" text="Hero Lists" />
+   </children>
+</AnchorPane>

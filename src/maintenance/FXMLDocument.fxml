@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="960.0" stylesheets="@../../css/rpg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maintenance.FXMLDocumentController">
+   <children>
+      <ImageView fx:id="box" fitHeight="206.0" fitWidth="857.0" layoutX="64.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/TextBox.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="statbtn" layoutX="512.0" layoutY="30.0" mnemonicParsing="false" onAction="#statbtnview" prefHeight="51.0" prefWidth="133.0" styleClass="menu-btn" text="Stats" />
+      <Button fx:id="dtbtn" layoutX="652.0" layoutY="30.0" mnemonicParsing="false" onAction="#dtbtnview" prefHeight="51.0" prefWidth="133.0" styleClass="menu-btn" text="Data View " />
+      <Button fx:id="addbtn" layoutX="791.0" layoutY="30.0" mnemonicParsing="false" onAction="#addbtnview" prefHeight="51.0" prefWidth="133.0" styleClass="menu-btn" text=" Add Data " />
+      <Label fx:id="txt" layoutX="129.0" layoutY="405.0" text="Hey There . . ." textFill="WHITE" />
+      <ImageView fitHeight="579.0" fitWidth="431.0" layoutX="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/SimpleHUD.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="june" fitHeight="412.0" fitWidth="227.0" layoutX="360.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/BeretG.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="talk" layoutX="833.0" layoutY="527.0" mnemonicParsing="false" onAction="#btntclick" prefHeight="39.0" prefWidth="43.0" text="V" textFill="#150e40" />
+      <Button fx:id="viewHero" layoutX="129.0" layoutY="164.0" mnemonicParsing="false" onAction="#opnviewhero" styleClass="submenu-btn" text="View Hero" visible="false" />
+      <Button fx:id="ViewItem" layoutX="307.0" layoutY="164.0" mnemonicParsing="false" onAction="#opnviewitem" styleClass="submenu-btn" text="View item" visible="false" />
+      <Button fx:id="addHero" layoutX="132.0" layoutY="164.0" mnemonicParsing="false" onAction="#opnaddhero" styleClass="submenu-btn" text="Add Hero" visible="false" />
+      <Button fx:id="addItem" layoutX="310.0" layoutY="164.0" mnemonicParsing="false" onAction="#opnadditem" styleClass="submenu-btn" text="Add Item" visible="false" />
+      <Button fx:id="herostat" layoutX="123.0" layoutY="164.0" mnemonicParsing="false" onAction="#opnherostat" styleClass="submenu-btn" text="Hero's Stats" visible="false" />
+      <Button fx:id="heroinv" layoutX="301.0" layoutY="164.0" mnemonicParsing="false" onAction="#opnheroinv" onMouseClicked="#notuse" styleClass="submenu-btn" text="Hero's Inventory" visible="false" />
+      <Button fx:id="Viewrc" layoutX="130.0" layoutY="224.0" mnemonicParsing="false" onAction="#opnviewrc" styleClass="submenu-btn" text="View Race" visible="false" />
+      <Button fx:id="Viewcls" layoutX="306.0" layoutY="224.0" mnemonicParsing="false" onAction="#opnviewcls" styleClass="submenu-btn" text="View Class" visible="false" />
+      <Button fx:id="addrc" layoutX="133.0" layoutY="224.0" mnemonicParsing="false" onAction="#opnaddrc" styleClass="submenu-btn" text="Add Race" visible="false" />
+      <Button fx:id="addcls" layoutX="308.0" layoutY="224.0" mnemonicParsing="false" onAction="#opnaddclass" styleClass="submenu-btn" text="Add Class" visible="false" />
+      <Button fx:id="Viewreg" layoutX="209.0" layoutY="111.0" mnemonicParsing="false" onAction="#opnviewreg" styleClass="submenu-btn" text="World Regions" visible="false" />
+      <Button fx:id="addreg" layoutX="217.0" layoutY="111.0" mnemonicParsing="false" onAction="#opnaddreg" styleClass="submenu-btn" text="Add Regions" visible="false" />
+   </children>
+</AnchorPane>

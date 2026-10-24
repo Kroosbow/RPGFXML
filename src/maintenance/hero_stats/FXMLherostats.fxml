@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="654.0" prefWidth="893.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maintenance.hero_stats.FXMLherostatsController">
+    <stylesheets>
+        <URL value="@fxmlherostats.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tbstats" layoutX="42.0" layoutY="365.0" prefHeight="257.0" prefWidth="510.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imgprof" fitHeight="264.0" fitWidth="273.0" layoutX="42.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/drhr.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="333.0" layoutY="78.0" text="Name" />
+      <Label layoutX="42.0" layoutY="31.0" text="ID :" />
+      <TextField fx:id="txtid" editable="false" layoutX="82.0" layoutY="25.0" />
+      <Label layoutX="334.0" layoutY="140.0" text="Race" />
+      <Label layoutX="333.0" layoutY="204.0" text="Class" />
+      <TextField fx:id="txtnm" editable="false" layoutX="414.0" layoutY="72.0" prefHeight="39.0" prefWidth="347.0" />
+      <TextField fx:id="txtrc" editable="false" layoutX="414.0" layoutY="134.0" prefHeight="39.0" prefWidth="347.0" />
+      <TextField fx:id="txtcs" editable="false" layoutX="414.0" layoutY="198.0" prefHeight="39.0" prefWidth="347.0" />
+      <Label layoutX="334.0" layoutY="261.0" text="Effect" />
+      <TextField fx:id="txtef" editable="false" layoutX="414.0" layoutY="259.0" prefHeight="39.0" prefWidth="347.0" />
+      <Button fx:id="back" layoutX="14.0" layoutY="603.0" mnemonicParsing="false" onAction="#backclick" prefHeight="39.0" prefWidth="74.0" stylesheets="@fxmlherostats.css" text="Back" />
+      <Button fx:id="next" layoutX="773.0" layoutY="7.0" mnemonicParsing="false" onAction="#nextclick" styleClass="inv-btn">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/next.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="prev" layoutX="711.0" layoutY="7.0" mnemonicParsing="false" onAction="#prevclick" styleClass="inv-btn">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0">
+               <image>
+                  <Image url="@../../img/next.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="first" layoutX="637.0" layoutY="2.0" mnemonicParsing="false" onAction="#firstclick" prefHeight="60.0" prefWidth="74.0" styleClass="inv-btn">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0">
+               <image>
+                  <Image url="@../../img/last.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="last" layoutX="823.0" layoutY="2.0" mnemonicParsing="false" onAction="#lastclick" prefHeight="59.0" prefWidth="74.0" styleClass="inv-btn">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/last.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tbinfo" layoutX="698.0" layoutY="381.0" prefHeight="39.0" prefWidth="130.0" visible="false">
+        <columns>
+          <TableColumn prefWidth="37.0" text="C1" />
+          <TableColumn prefWidth="113.0" text="C2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtfr" editable="false" layoutX="414.0" layoutY="316.0" prefHeight="39.0" prefWidth="347.0" />
+      <Label layoutX="332.0" layoutY="322.0" text="From" />
+   </children>
+</AnchorPane>
